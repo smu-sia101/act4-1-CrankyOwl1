@@ -49,7 +49,7 @@ namespace PetNameGenerator.Controllers
                 Random rand = new Random();
                 string firstName = names[rand.Next(names.Length)];
                 string secondName = names[rand.Next(names.Length)];
-                return Ok(new { name = firstName + secondName });
+                return Ok(new { name = firstName + " " + secondName });
             }
 
             Random random = new Random();
