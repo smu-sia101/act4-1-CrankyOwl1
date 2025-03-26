@@ -52,6 +52,7 @@ namespace PetNameGenerator.Controllers
                 return Ok(new { name = firstName + " " + secondName });
             }
 
+
             Random random = new Random();
             string randomName = names[random.Next(names.Length)];
             return Ok(new { name = randomName });
